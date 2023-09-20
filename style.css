@@ -19,9 +19,13 @@ button {
   font-weight: bolder;
   border-radius: 6px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
  button:hover {
-
+  transition-duration: 2s;
+  transition-property: transform;
+  transition-timing-function: ease-in;
+  background-color: rgba(5, 152, 250, 0.884);
   color:orangered;
  }
 
@@ -48,6 +52,7 @@ button {
 #navbar button:hover {
 
   color:orangered;
+  
 
 }
 
@@ -74,7 +79,10 @@ button {
 }
 #landing-page .column{
 width:50%;
+line-height: 28px;
+margin: auto;
 }
+
 #landing-page .column img{
   margin-left: 50%;
   width:50%;
@@ -94,6 +102,8 @@ width:50%;
  height: 50vh;
  padding: 30px;
  font-family:'Times New Roman', Times, serif ;
+ margin-top: 10%;
+ margin-bottom: 15%;
 }
 
 #skills .cards-container { 
@@ -117,7 +127,12 @@ width:50%;
   padding: 20px;
   border-radius: 20px;
   line-height: 30px;
- 
+}
+
+#skills .cards-container .card:hover{
+  background-color:orangered;
+  transition-duration:4s;
+  transition-timing-function: ease-out;
 }
 
 /*footer*/
@@ -154,3 +169,33 @@ footer #row2 .icons {
   color: black;
 }
  
+/* responsive screen */
+@media screen (max-width: 450px) {
+body{
+  font-size: 10px;
+}
+#landing-page .column img{
+  margin-left: 50%;
+  width:50%;
+  display: flex;
+  flex-direction: column;
+}}
+@media screen (max-width: 600px) {
+  body{
+    font-size: 20px;
+  }
+}
+@media screen {max-width:760px;}{
+  body{
+    font-size: 30px;
+  }
+}
+@media screen {max-width:990px;}{
+
+}
+@media screen {max-width:1200px;}{
+
+}
+
+
+
